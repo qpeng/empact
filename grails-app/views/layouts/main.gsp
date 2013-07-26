@@ -87,7 +87,7 @@
 <footer>
     <div class='items'>
         <g:link controller="faq">FAQ</g:link> &middot;
-        <a href="#">Links</a>
+        <g:link controller="Link" action="list">Links</g>
         <g:link controller="Link" action="list">&middot; Contact Moderator</g:link>
     </div>
 </footer>
