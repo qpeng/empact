@@ -8,7 +8,34 @@
     <meta name="layout" content="main"/>
     <title>Welcome to EMPaCT</title>
 
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBp9Xy0pbRVvSWYSLBmxF4us8sm3ZjjdrY&sensor=true">
+    </script>
+    <script type="text/javascript">
+        function initialize() {
+            var mapOptions = {
+                center: new google.maps.LatLng(15, 0),
+                zoom: 2,
+                mapTypeId: google.maps.MapTypeId.HYBRID,
+                streetViewControl: false,
+                panControl: false,
+                zoomControl: false,
+                mapTypeControl: false
+            };
+            var map = new google.maps.Map(document.getElementById("map-canvas"),
+                    mapOptions);
+                var hurr = new google.maps.LatLng(40.4230, -98.7372)
+                var here = new google.maps.toLa
+                var marker = new google.maps.Marker({
+                    position: hurr,
+                    map: map,
+                    clickable: true,
+                    title:"Hello World!"
+                });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+   %{--<script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
 
         google.load("visualization", "1", {packages: ["map"]});
@@ -23,10 +50,10 @@
                 var name = elems[i].getElementsByClassName('country-name').item(0).innerText;
                 data.addRow(new Array(name, desc));
             }
-            var map = new google.visualization.Map(document.getElementById('map'));
-            map.draw(data, {showTip: true, zoomLevel: 2});
+            var map = new google.visualization.Map(document.getElementById('map-canvas'));
+            map.draw(data, {showTip: true, zoomLevel: 2, streetViewControl: false});
         }
-    </script>
+    </script>--}%
 </head>
 
 <body>
