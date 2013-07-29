@@ -9,7 +9,7 @@
 <body>
 <center><h2>External Links</h2></center>
 <div class="container">
-    <a href="#askMod" role="button" class="btn btn-primary pull-right" data-toggle="modal">New Link</a><br><br>
+    <a href="#newLink" role="button" class="btn btn-primary pull-right" data-toggle="modal">New Link</a><br><br>
     <div class="hero-unit">
         <table class="table">
             <g:each in="${linkInstanceList}" var="exlink">
@@ -26,7 +26,7 @@
 </div>
 </div>
 
-<div id="askMod" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="newLink" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="myModalLabel">Title</h3>
