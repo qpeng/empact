@@ -14,9 +14,4 @@ class Link {
     
     }
 
-    String toString() {
-        name
-        link
-        description
-    }
 }
