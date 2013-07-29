@@ -131,6 +131,8 @@ class BootStrap {
                 70.0035, 21.4617, 34.0723, 58.7951, 30.2937,
                 2.5771, 66.8099
 
+                ]
+
         def medit = [
                 'Afghanistan', 'Bahrain', 'Djibouti', 'Egypt', 'Iran (Islamic Republic of)', 'Iraq', 'Jordan',
                 'Kuwait', 'Lebanon', 'Libya', 'Morocco', 'Oman', 'Pakistan', 'Qatar', 'Saudi Arabia', 'Somalia',
