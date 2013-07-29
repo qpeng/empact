@@ -18,7 +18,16 @@
             <g:each in="${linkInstanceList}" var="exlink">
                 <tr>
                     <td width="30%"><a href="${exlink.link}">${exlink.name.toString()}</a></td>
-                    <td width="70%">${exlink.description.toString()}</td>
+                    <td width="65%">${exlink.description.toString()}</td>
+                    <td width="5%">
+                    <g:form>
+                        <fieldset class="buttons pull-right ">
+                            <g:hiddenField name="id" value="${exlink?.id}" />
+                            <g:link class="edit btn btn-mini btn-link" action="edit" id="${resp?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+                            <g:actionSubmit class="delete btn btn-mini btn-link" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+                        </fieldset>
+                    </g:form>
+                    </td>
                 </tr>
             </g:each>
         </table>
@@ -29,8 +38,7 @@
     </div>
 </div>
 
-<div id="newLink" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-     aria-hidden="true">
+<div id="newLink" class="modal hide fade">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
 
@@ -82,6 +90,5 @@
 
 <g:javascript library="jquery"/>
 <script type="text/javascript" src="${resource(dir: 'js', file: 'bootstrap.min.js')}"></script>
-
 </body>
 </html>
