@@ -9,5 +9,7 @@ class Link {
         name(blank: false)
         link(blank: false)
         description(blank: false)
+
     }
+
 }
