@@ -39,7 +39,7 @@
 
     <div class="modalbody-newProject">
         <div class="container">
-            <g:form name="newProject" class="form-horizontal" url="[controller: 'link', action: 'create']">
+            <g:form name="newProject" class="form-horizontal" url="[controller: 'link', action: 'save']">
                 <fieldset>
                     <div class="control-group">
                         <label class="control-label" for="name">Title:<sup class='red'>*</sup></label>
