@@ -10,7 +10,7 @@ class Link {
 
     name(blank: false)
     link(blank: false)
-    description(blank: false)
+    description(blank: false, maxSize:5000)
     
     }
 
