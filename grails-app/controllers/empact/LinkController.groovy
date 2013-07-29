@@ -29,7 +29,7 @@ class LinkController {
         }
 
         flash.message = message(code: 'default.created.message', args: [message(code: 'link.label', default: 'Link'), linkInstance.id])
-        redirect(action: "show", id: linkInstance.id)
+        redirect(action: "list", id: linkInstance.id)
     }
 
     def show(Long id) {
