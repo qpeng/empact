@@ -3,42 +3,92 @@
 <html>
 <head>
     <meta name="layout" content="main">
-    <g:set var="entityName" value="${message(code: 'link.label', default: 'Link')}" />
+    <g:set var="entityName" value="${message(code: 'link.label', default: 'Link')}"/>
     <title>External Links</title>
 </head>
+
 <body>
 <center><h2>External Links</h2></center>
+
 <div class="container">
-    <a href="#askMod" role="button" class="btn btn-primary pull-right" data-toggle="modal">New Link</a><br><br>
+    <a href="#newLink" role="button" class="btn btn-primary pull-right" data-toggle="modal">New Link</a><br><br>
+
     <div class="hero-unit">
         <table class="table">
             <g:each in="${linkInstanceList}" var="exlink">
                 <tr>
                     <td width="30%"><a href="${exlink.link}">${exlink.name.toString()}</a></td>
-                    <td width="70%">${exlink.description.toString()}</td>
+                    <td width="65%">${exlink.description.toString()}</td>
+                    <td width="5%">
+                    <g:form>
+                        <fieldset class="buttons pull-right ">
+                            <g:hiddenField name="id" value="${exlink?.id}" />
+                            <g:link class="edit btn btn-mini btn-link" action="edit" id="${resp?.id}"><g:message code="default.button.edit.label" default="Edit" /></g:link>
+                            <g:actionSubmit class="delete btn btn-mini btn-link" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
+                        </fieldset>
+                    </g:form>
+                    </td>
                 </tr>
             </g:each>
         </table>
     </div>
+
     <div class="pagination">
-        <g:paginate total="${linkInstanceTotal}" />
+        <g:paginate total="${linkInstanceTotal}"/>
     </div>
 </div>
-</div>
 
-<div id="askMod" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="newLink" class="modal hide fade">
     <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Title</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+
+        <h3>New Project</h3>
     </div>
-    <div class="modal-body">
-        <p> Body text</p>
-    </div>
-    <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        <button class="btn btn-primary">Send</button>
+
+    <div class="modalbody-newProject">
+        <div class="container">
+            <g:form name="newProject" class="form-horizontal" url="[controller: 'link', action: 'save']">
+                <fieldset>
+                    <div class="control-group">
+                        <label class="control-label" for="name">Title:<sup class='red'>*</sup></label>
+
+                        <div class="controls">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="link">URL:<sup class='red'>*</sup></label>
+
+                        <div class="controls">
+                            <input type="text" name="link" id="link" placeholder="URL">
+                        </div>
+                    </div>
+
+
+                    <div class="control-group">
+                        <label class="control-label" for="description">Description<sup
+                                class='red'>*</sup></label>
+
+                        <div class="controls">
+                            <textarea id="description" name="description" class="span3"
+                                      placeholder="Link Description" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="control-buttons" align="center">
+                        <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                        %{--<g:submitButton id="create-link" name="create" value="Create" class="btn btn-primary"/>--}%
+                        <input type="submit" name="create" class="save btn btn-primary" value="Create" id="create">
+                    </div>
+
+                </fieldset>
+            </g:form>
+        </div>
     </div>
 </div>
 
+<g:javascript library="jquery"/>
+<script type="text/javascript" src="${resource(dir: 'js', file: 'bootstrap.min.js')}"></script>
 </body>
 </html>
