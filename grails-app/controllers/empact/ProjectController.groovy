@@ -46,10 +46,15 @@ class ProjectController {
         }
 
         def user = EndUser.get(session.user.id)
+        def inProject = (user.userType.toString().equals("Student Analyst") && projectInstance.analysts.toListString().contains(user.toString())) || (user.userType.toString().equals("Expert") && projectInstance.experts.toListString().contains(user.toString()))
         [
                 user: user,
                 userType: user.userType.name,
-                projectInstance: projectInstance
+                projectInstance: projectInstance,
+                inProject: inProject,
+                modalType: [
+                        (inProject ? "requestData" : "")
+                ]
         ]
     }
 
@@ -216,6 +221,7 @@ class ProjectController {
                 userType: userType,
                 projectInstanceList: projectInstanceList,
                 projectInstanceTotal: projectInstanceTotal,
+                inProject: true,
                 modalType: ["requestData", "newProject", "uploadFile"]
         ]
     }
