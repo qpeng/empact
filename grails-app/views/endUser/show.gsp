@@ -1,4 +1,3 @@
-
 <%@ page import="empact.EndUser" %>
 <!DOCTYPE html>
 <html>
@@ -15,6 +14,11 @@
         <div id="userStats" class="clearfix block">
             <div class="pic block pull-left">
                 <g:img dir="images" file="${endUserInstance?.avataraddress}" absolute="true" alt="Grails" width="150" height="150"/>
+                        <g:uploadForm action="upload">
+                        Upload a Profile Picture: <br>
+            <input type="file" name="myFile" id="file-upload" style="width: 80px;"/><br>
+            <input type="submit" class="btn btn-primary save " value="Submit"/>
+        </g:uploadForm>
             </div>
 
             <div class="data block pull-left">
@@ -98,11 +102,6 @@
             </div>
         </section>
     </g:if>
-
-        <g:uploadForm action="upload">
-            <input type="file" name="myFile" id="file-upload" />
-            <input type="submit" class="btn btn-primary save " value="Submit"/>
-        </g:uploadForm>
 </div>
 
 <g:javascript library="jquery"/>
