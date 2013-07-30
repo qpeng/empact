@@ -85,6 +85,9 @@ body {
 .accordion{
     max-width: 700px;
 }
+.accordion-group{
+    margin-bottom: -15px;
+}
 .accordion-heading {
     border-bottom: 0;
     background-color:#e9f2f6;
