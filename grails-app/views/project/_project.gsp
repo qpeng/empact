@@ -1,4 +1,4 @@
-<%@ page import="empact.EndUser" %>
+<%@ page import="empact.WhoOffice; empact.EndUser" %>
 <g:set var="project"
        value="${(projectInstanceList != null && !projectInstanceList.isEmpty()) ? projectInstanceList.first() : projectInstance}"/>
 
@@ -7,11 +7,13 @@
 <div class="project-body">
 <ul class='nav nav-tabs' data-tabs='tabs'>
     <li class='active'><a href="#details" data-toggle='tab'>Project</a></li>
-    <li><a href="#data" data-toggle="tab">Data</a></li>
-    <li><a href="#notes" data-toggle='tab'>Notes</a></li>
-    <li><a href="#findings" data-toggle='tab'>Findings</a></li>
-    <g:if test="${userType?.equals("Expert") || userType?.equals("Student Analyst")}">
-        <li><a href="#private" data-toggle='tab'>Private Files</a></li>
+    <g:if test="${session.user && (userType?.equals("Moderator") || userType?.equals("Superuser") || (userType?.equals("WHO Official") && ((WhoOffice) user.whoOffice).toString().equals("Global Headquarters")) || inProject)}">
+        <li><a href="#data" data-toggle="tab">Data</a></li>
+        <li><a href="#notes" data-toggle='tab'>Notes</a></li>
+        <li><a href="#findings" data-toggle='tab'>Findings</a></li>
+        <g:if test="${inProject}">
+            <li><a href="#private" data-toggle='tab'>Private Files</a></li>
+        </g:if>
     </g:if>
 </ul>
 
@@ -84,11 +86,12 @@
     </div>
 </div>
 
+<g:if test="${session.user && (userType?.equals("Moderator") || userType?.equals("Superuser") || (userType?.equals("WHO Official") && ((WhoOffice) user.whoOffice).toString().equals("Global Headquarters")) || inProject)}">
 <!-- DATA TAB -->
 <div class="tab-pane" id="data">
     <h3 class='inline header-text'>${fieldValue(bean: project, field: "name")} &middot; Data</h3>
     <g:if test="${userType?.equals("Expert") || userType?.equals("Student Analyst")}">
-        <a href="#requestData" role='button' class='btn btn-primary inline request-data'
+        <a href="#request-modal" role='button' class='btn btn-primary inline request-data'
            data-toggle='modal'>Request Data</a>
     </g:if>
     <g:elseif
@@ -194,7 +197,7 @@
     </table>
 </div>
 
-<g:if test="${userType?.equals("Expert") || userType?.equals("Student Analyst")}">
+<g:if test="${inProject}">
     <!-- PRIVATE FILES TAB -->
     <div class="tab-pane" id="private">
         <h3 class='header-text'>${fieldValue(bean: project, field: "name")} &middot; Private Files</h3>
@@ -229,6 +232,7 @@
             </tbody>
         </table>
     </div>
+</g:if>
 </g:if>
 </div>
 </div>
