@@ -19,6 +19,7 @@
                 <tr>
                     <td width="30%"><a href="${exlink.link}">${exlink.name.toString()}</a></td>
                     <td width="65%">${exlink.description.toString()}</td>
+                    <g:if test="${session.user && (userType?.equals("Moderator") || userType?.equals("Superuser"))}">
                     <td width="5%">
                     <g:form>
                         <fieldset class="buttons pull-right ">
@@ -28,6 +29,7 @@
                         </fieldset>
                     </g:form>
                     </td>
+                    </g:if>
                 </tr>
             </g:each>
         </table>
