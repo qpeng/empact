@@ -95,14 +95,17 @@ class BootStrap {
         ]
 
         def europe = [
-                'Albania', 'Andorra', 'Armenia', 'Austria', 'Azerbaijan', 'Belarus', 'Belgium',
-                'Bosnia and Herzegovina', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic', 'Denmark',
-                'Estonia', 'Finland', 'France', 'Georgia', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland',
-                'Israel', 'Italy', 'Kazakhstan', 'Kyrgyzstan', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta',
-                'Monaco', 'Montenegro', 'Netherlands', 'Norway', 'Poland', 'Portugal', 'Republic of Moldova',
-                'Romania', 'Russian Federation', 'San Marino', 'Serbia', 'Slovakia', 'Slovenia', 'Spain',
-                'Sweden', 'Switzerland', 'Tajikistan', 'The former Yugoslav Republic of Macedonia', 'Turkey',
-                'Turkmenistan', 'Ukraine', 'United Kingdom', 'Uzbekistan'
+                'Albania', 'Andorra', 'Armenia', 'Austria', 'Azerbaijan',
+                'Belarus', 'Belgium', 'Bosnia and Herzegovina', 'Bulgaria', 'Croatia',
+                'Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland',
+                'France', 'Georgia', 'Germany', 'Greece', 'Hungary',
+                'Iceland', 'Ireland', 'Israel', 'Italy', 'Kazakhstan',
+                'Kyrgyzstan', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta',
+                'Monaco', 'Montenegro', 'Netherlands', 'Norway', 'Poland',
+                'Portugal', 'Republic of Moldova', 'Romania', 'Russian Federation', 'San Marino',
+                'Serbia', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Switzerland',
+                'Tajikistan', 'The former Yugoslav Republic of Macedonia', 'Turkey', 'Turkmenistan',
+                'Ukraine', 'United Kingdom', 'Uzbekistan'
         ]
         
                 def europe_lat = [
@@ -110,26 +113,26 @@ class BootStrap {
                 53.3275, 50.7802, 44.1285, 42.3755, 44.8313,
                 35.2251, 49.7500, 55.7200, 58.7673, 62.4302,
                 46.0000, 42.1902, 51.0000, 38.3228, 47.2753,
-                64.8343, 31.7833, 44.2632, 43.3503, 41.7584,
-                57.0035, 55.3006, 49.6117, 35.8997, 43.7328,
-                42.5119, 52.2066, 60.3800, 51.4273, 38.7000,
-                47.6333, 45.7909, 54.8270, 43.9366, 44.9778,
-                48.6300, 45.8002, 40.6986, 59.2685, 46.57,
-                38.6997, 41.5101, 39.1988, 39.0206, 49.2144,
-                53.1142, 40.6818
+                64.8343, 53.0000, 31.7833, 44.2632, 43.3503,
+                41.7584, 57.0035, 55.3006, 49.6117, 35.8997,
+                43.7328, 42.5119, 52.2066, 60.3800, 51.4273, 
+                38.7000, 47.6333, 45.7909, 54.8270, 43.9366, 
+                44.9778, 48.6300, 45.8002, 40.6986, 59.2685, 
+                46.57, 38.6997, 41.5101, 39.1988, 39.0206, 
+                49.2144, 53.1142, 40.6818
         ]
         def europe_lng = [
                 20.0194, 1.5208, 44.9795, 16.2200, 47.1542,
                 27.4014, 4.4269, 17.9249, 25.1629, 16.1552,
                 33.6124, 15.7500, 12.5700, 24.7990, 24.7271,
                 2.0000, 43.2781, 9.0000, 22.2592, 20.5528,
-                -18.9770, 35.2167, 11.4403, 79.0804, 74.2526,
-                24.3446, 23.8491, 6.1300, 14.5172, 7.4197,
-                19.0782, 5.6422, 5.3400, 20.1726, -9.1833,
-                28.1500, 24.7731, 55.0423, 12.4676, 20.1268,
-                19.5561, 15.9039, -3.2949, 15.7591, 7.27,
-                70.0035, 21.4617, 34.0723, 58.7951, 30.2937,
-                2.5771, 66.8099
+                -18.9770, 7.0000, 35.2167, 11.4403, 79.0804,
+                74.2526, 24.3446, 23.8491, 6.1300, 14.5172,
+                7.4197, 19.0782, 5.6422, 5.3400, 20.1726,
+                -9.1833, 28.1500, 24.7731, 55.0423, 12.4676,
+                20.1268, 19.5561, 15.9039, -3.2949, 15.7591,
+                7.27, 70.0035, 21.4617, 34.0723, 58.7951,
+                30.2937, 2.5771, 66.8099
 
                 ]
 
@@ -141,36 +144,47 @@ class BootStrap {
         
         
         def medit_lat = [
-                    33.9791, 26.0275, 11.5857, 28.8013, 33.6804, 33.0000, 31.9277, 29.3286,
-                    33.9270, 29.9569, 32.7502, 22.7465, 32.0162, 25.3000, 24.1631, 6.0442,
-                    4.8500, 12.4204, 34.8545, 35.4187, 25.0895, 14.5697
+                    33.9791, 26.0275, 11.5857, 28.8013, 33.6804,
+                    33.0000, 31.9277, 29.3286, 33.9270, 29.9569,
+                    32.7502, 22.7465, 32.0162, 25.3000, 24.1631,
+                    6.0442, 4.8500, 12.4204, 34.8545, 35.4187,
+                    25.0895, 14.5697
         ]
         
         def medit_lng = [
-                    66.4849, 50.5500, 42.6190, 31.1711, 51.1689, 44.0000, 35.8793, 48.0034,
-                    35.6951, 15.7461, -6.1916, 57.1203, 71.6926, 51.5333, 43.6021, 45.7194,
-                    31.6000, 30.6753, 37.0261, 9.9875, 55.6068, 46.1003
+                    66.4849, 50.5500, 42.6190, 31.1711, 51.1689,
+                    44.0000, 35.8793, 48.0034, 35.6951, 15.7461,
+                    -6.1916, 57.1203, 71.6926, 51.5333, 43.6021,
+                    45.7194, 31.6000, 30.6753, 37.0261, 9.9875,
+                    55.6068, 46.1003
         ]
 
         def pacific = [
-                'Australia', 'Brunei Darussalam', 'Cambodia', 'China', 'Cook Islands', 'Fiji', 'Japan',
-                'Kiribati', "Lao People's Democratic Republic", 'Malaysia', 'Marshall Islands',
-                'Micronesia (Federated States of)', 'Mongolia', 'Nauru', 'New Zealand', 'Niue', 'Palau',
-                'Papua New Guinea', 'Philippines', 'Republic of Korea', 'Samoa', 'Singapore', 'Solomon Islands',
-                'Tonga', 'Tuvalu', 'Vanuatu', 'Viet Nam'
+                'Australia', 'Brunei Darussalam', 'Cambodia', 'China', 'Cook Islands',
+                'Fiji', 'Japan', 'Kiribati', "Lao People's Democratic Republic", 'Malaysia',
+                'Marshall Islands', 'Micronesia (Federated States of)', 'Mongolia', 'Nauru', 'New Zealand',
+                'Niue', 'Palau', 'Papua New Guinea', 'Philippines', 'Republic of Korea',
+                'Samoa', 'Singapore', 'Solomon Islands', 'Tonga', 'Tuvalu',
+                'Vanuatu', 'Viet Nam'
         ]
         
         
         def pacific_lat = [
-                -32.3456, 4.8167, 12.4317, 32.9043, -21.2000, -18.1667, 35.4112, 1.3333, 18.2912, 4.1936, 7.2971,
-                6.9319, 47.7694, -0.5273, -41.4395, -19.0633, 7.3497, -5.9054, 11.8728, 36.4693, -13.7745, 
-                1.3667, -8.9389, -19.6964, -8.5167, -17.7500, 15.4549            
+                -32.3456, 4.8167, 12.4317, 32.9043, -21.2000,
+                -18.1667, 35.4112, 1.3333, 18.2912, 4.1936,
+                7.2971, 6.9319, 47.7694, -0.5273, -41.4395,
+                -19.0633, 7.3497, -5.9054, 11.8728, 36.4693,
+                -13.7745, 1.3667, -8.9389, -19.6964, -8.5167,
+                -17.7500, 15.4549            
         ]
         
         def pacific_lng = [
-                141.4346, 114.7694, 104.5291, 110.4677, -159.7667, 178.4500, 135.8337, 173.0000, 103.6069, 168.7061,
-                158.2224, 100.1790, 166.9367, 172.1936, -169.8697, 134.5097, 147.4080, 122.8613, 127.6243, -172.0428,
-                103.7500, 159.5305, -175.0270, 179.2167, 168.3000, 106.5760
+                141.4346, 114.7694, 104.5291, 110.4677, -159.7667,
+                178.4500, 135.8337, 173.0000, 103.6069, 103.7249, 
+                168.7061, 158.2224, 100.1790, 166.9367, 172.1936,
+                -169.8697, 134.5097, 147.4080, 122.8613, 127.6243,
+                -172.0428, 103.7500, 159.5305, -175.0270, 179.2167,
+                168.3000, 106.5760
         ]
 
         def languages = [
