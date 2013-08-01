@@ -20,7 +20,7 @@ class BootStrap {
                 'Uganda', 'United Republic of Tanzania', 'Zambia', 'Zimbabwe'
         ]
 
-              def africa_lat = [
+        def africa_lat = [
                 33.0971, -11.4798, 6.3176, -22.9906, 12.1204,
                 -3.2836, 5.1296, 15.1111, 5.7735, 13.6216,
                 -12.0236, -2.0903, 7.1317, -2.6633, 1.9248,
@@ -95,30 +95,27 @@ class BootStrap {
         ]
 
         def europe = [
-                'Albania', 'Andorra', 'Armenia', 'Austria', 'Azerbaijan',
-                'Belarus', 'Belgium', 'Bosnia and Herzegovina', 'Bulgaria', 'Croatia',
-                'Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland',
-                'France', 'Georgia', 'Germany', 'Greece', 'Hungary',
-                'Iceland', 'Ireland', 'Israel', 'Italy', 'Kazakhstan',
-                'Kyrgyzstan', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta',
-                'Monaco', 'Montenegro', 'Netherlands', 'Norway', 'Poland',
-                'Portugal', 'Republic of Moldova', 'Romania', 'Russian Federation', 'San Marino',
-                'Serbia', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'Switzerland',
-                'Tajikistan', 'The former Yugoslav Republic of Macedonia', 'Turkey', 'Turkmenistan',
-                'Ukraine', 'United Kingdom', 'Uzbekistan'
+                'Albania', 'Andorra', 'Armenia', 'Austria', 'Azerbaijan', 'Belarus', 'Belgium',
+                'Bosnia and Herzegovina', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic', 'Denmark',
+                'Estonia', 'Finland', 'France', 'Georgia', 'Germany', 'Greece', 'Hungary', 'Iceland', 'Ireland',
+                'Israel', 'Italy', 'Kazakhstan', 'Kyrgyzstan', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta',
+                'Monaco', 'Montenegro', 'Netherlands', 'Norway', 'Poland', 'Portugal', 'Republic of Moldova',
+                'Romania', 'Russian Federation', 'San Marino', 'Serbia', 'Slovakia', 'Slovenia', 'Spain',
+                'Sweden', 'Switzerland', 'Tajikistan', 'The former Yugoslav Republic of Macedonia', 'Turkey',
+                'Turkmenistan', 'Ukraine', 'United Kingdom', 'Uzbekistan'
         ]
-        
-                def europe_lat = [
+
+        def europe_lat = [
                 41.0092, 42.5344, 40.2885, 48.1200, 40.1833,
                 53.3275, 50.7802, 44.1285, 42.3755, 44.8313,
                 35.2251, 49.7500, 55.7200, 58.7673, 62.4302,
                 46.0000, 42.1902, 51.0000, 38.3228, 47.2753,
                 64.8343, 53.0000, 31.7833, 44.2632, 43.3503,
                 41.7584, 57.0035, 55.3006, 49.6117, 35.8997,
-                43.7328, 42.5119, 52.2066, 60.3800, 51.4273, 
-                38.7000, 47.6333, 45.7909, 54.8270, 43.9366, 
-                44.9778, 48.6300, 45.8002, 40.6986, 59.2685, 
-                46.57, 38.6997, 41.5101, 39.1988, 39.0206, 
+                43.7328, 42.5119, 52.2066, 60.3800, 51.4273,
+                38.7000, 47.6333, 45.7909, 54.8270, 43.9366,
+                44.9778, 48.6300, 45.8002, 40.6986, 59.2685,
+                46.57, 38.6997, 41.5101, 39.1988, 39.0206,
                 49.2144, 53.1142, 40.6818
         ]
         def europe_lng = [
@@ -134,53 +131,46 @@ class BootStrap {
                 7.27, 70.0035, 21.4617, 34.0723, 58.7951,
                 30.2937, 2.5771, 66.8099
 
-                ]
+        ]
 
         def medit = [
                 'Afghanistan', 'Bahrain', 'Djibouti', 'Egypt', 'Iran (Islamic Republic of)', 'Iraq', 'Jordan',
                 'Kuwait', 'Lebanon', 'Libya', 'Morocco', 'Oman', 'Pakistan', 'Qatar', 'Saudi Arabia', 'Somalia',
                 'South Sudan', 'Sudan', 'Syrian Arab Republic', 'Tunisia', 'United Arab Emirates', 'Yemen'
         ]
-        
-        
+
         def medit_lat = [
-                    33.9791, 26.0275, 11.5857, 28.8013, 33.6804,
-                    33.0000, 31.9277, 29.3286, 33.9270, 29.9569,
-                    32.7502, 22.7465, 32.0162, 25.3000, 24.1631,
-                    6.0442, 4.8500, 12.4204, 34.8545, 35.4187,
-                    25.0895, 14.5697
+                33.9791, 26.0275, 11.5857, 28.8013, 33.6804, 33.0000, 31.9277, 29.3286,
+                33.9270, 29.9569, 32.7502, 22.7465, 32.0162, 25.3000, 24.1631, 6.0442,
+                4.8500, 12.4204, 34.8545, 35.4187, 25.0895, 14.5697
         ]
-        
+
         def medit_lng = [
-                    66.4849, 50.5500, 42.6190, 31.1711, 51.1689,
-                    44.0000, 35.8793, 48.0034, 35.6951, 15.7461,
-                    -6.1916, 57.1203, 71.6926, 51.5333, 43.6021,
-                    45.7194, 31.6000, 30.6753, 37.0261, 9.9875,
-                    55.6068, 46.1003
+                66.4849, 50.5500, 42.6190, 31.1711, 51.1689, 44.0000, 35.8793, 48.0034,
+                35.6951, 15.7461, -6.1916, 57.1203, 71.6926, 51.5333, 43.6021, 45.7194,
+                31.6000, 30.6753, 37.0261, 9.9875, 55.6068, 46.1003
         ]
 
         def pacific = [
-                'Australia', 'Brunei Darussalam', 'Cambodia', 'China', 'Cook Islands',
-                'Fiji', 'Japan', 'Kiribati', "Lao People's Democratic Republic", 'Malaysia',
-                'Marshall Islands', 'Micronesia (Federated States of)', 'Mongolia', 'Nauru', 'New Zealand',
-                'Niue', 'Palau', 'Papua New Guinea', 'Philippines', 'Republic of Korea',
-                'Samoa', 'Singapore', 'Solomon Islands', 'Tonga', 'Tuvalu',
-                'Vanuatu', 'Viet Nam'
+                'Australia', 'Brunei Darussalam', 'Cambodia', 'China', 'Cook Islands', 'Fiji', 'Japan',
+                'Kiribati', "Lao People's Democratic Republic", 'Malaysia', 'Marshall Islands',
+                'Micronesia (Federated States of)', 'Mongolia', 'Nauru', 'New Zealand', 'Niue', 'Palau',
+                'Papua New Guinea', 'Philippines', 'Republic of Korea', 'Samoa', 'Singapore', 'Solomon Islands',
+                'Tonga', 'Tuvalu', 'Vanuatu', 'Viet Nam'
         ]
-        
-        
+
         def pacific_lat = [
                 -32.3456, 4.8167, 12.4317, 32.9043, -21.2000,
                 -18.1667, 35.4112, 1.3333, 18.2912, 4.1936,
                 7.2971, 6.9319, 47.7694, -0.5273, -41.4395,
                 -19.0633, 7.3497, -5.9054, 11.8728, 36.4693,
                 -13.7745, 1.3667, -8.9389, -19.6964, -8.5167,
-                -17.7500, 15.4549            
+                -17.7500, 15.4549
         ]
-        
+
         def pacific_lng = [
                 141.4346, 114.7694, 104.5291, 110.4677, -159.7667,
-                178.4500, 135.8337, 173.0000, 103.6069, 103.7249, 
+                178.4500, 135.8337, 173.0000, 103.6069, 103.7249,
                 168.7061, 158.2224, 100.1790, 166.9367, 172.1936,
                 -169.8697, 134.5097, 147.4080, 122.8613, 127.6243,
                 -172.0428, 103.7500, 159.5305, -175.0270, 179.2167,
@@ -192,8 +182,42 @@ class BootStrap {
         ]
 
         def userType = [
-                'Student Analyst', 'Expert', 'Mentor', 'WHO Official', 'Country Official', 'NGO Official', 'Moderator', 'Superuser'
+                'Student Analyst', 'Expert', 'Mentor', 'WHO Official', 'Country Official', 'NGO Official', 'Moderator', 'Superuser', 'Bot'
         ]
+
+        def cnShortTitles = [
+                'Elimination of NTDs',
+                'Connecting Poverty to NTDs',
+                'Youth, Education and NTDs',
+                'Health Sector Planning',
+                'Economic Toll of NTDs'
+        ]
+
+        def cnFullTitles = [
+                'Health sector planning to reach and sustain elimination of NTDs',
+                'Connecting dimensions of poverty to NTDs: how poverty-reduction programs can incorporate NTD control modalities',
+                'Youth, education, and NTDs: Measuring the impact of NTD control on community-level education initiatives',
+                'Evaluating the impact of NTDs on maternal and child health (MCH) and integrating NTD control into MCH programs',
+                'The Economic Toll of NTDs: Assessing the role of NTD control on human capital development'
+        ]
+
+        def cnDescriptions = [
+                'Long-term health sector planning and analysis is critical to the elimination of NTDs. Strategizing about the program costs of mass drug administration is a first step toward implementing an effective and sustainable NTD control program.',
+                'Although the intersection between poverty and NTDs has long been recognized, there has been limited exploration of how NTD control through Preventive Chemotherapy (PCT) affects the socioeconomic status of individuals. Providing evidence-based data of the relationship between poverty and NTDs would legitimize investment of PCT as a facet of poverty-reduction strategies',
+                'High rates of NTDs in children have long been linked to decreased cognitive development and increased school absenteeism. Evaluating the relationship between preventive chemotherapy and educational outcomes would dictate whether mass drug administration is an effective tool for improving community-level educational outcomes',
+                'NTDs exacerbate existing issues of low birth weight, poor nutritional status, and anemia in pregnancy, yet rarely are NTD control efforts incorporated into broader maternal and child health (MCH) initiatives. Establishing the relationship between NTD control and improved MCH outcomes, such as Soil Transmitted Helminth (STH) control on increased birth weight, will facilitate the integration of NTD control into future MCH initiatives',
+                'Past studies show that NTDs drain a country of its social, political and economic capital. But can NTD control jumpstart capital development? Evidence of the relationship between NTD control and human capital development must be explored further in order to more fully understand the economic impact of NTDs and develop strategies to combat their economic tolls'
+        ]
+
+        if (!ConceptNote.count()) {
+            for (int i = 0; i < cnShortTitles.size(); i++) {
+                new ConceptNote(
+                        shortTitle: cnShortTitles[i],
+                        fullTitle: cnFullTitles[i],
+                        description: cnDescriptions[i]
+                ).save()
+            }
+        }
 
         if (!UserType.count()) {
             for (String type : userType) {
@@ -220,82 +244,130 @@ class BootStrap {
             hq.setName("Global Headquarters")
             hq.save()
 
-
             def rofa = new WhoOffice()
             rofa.setName("Regional Office for Africa")
 
+            int index = 0
             for (String name : africa) {
                 Country country = new Country()
                 country.setName(name)
+                country.setLat(africa_lat[index])
+                country.setLng(africa_lng[index])
                 country.save()
 
                 rofa.addToCountries(country)
+                index++
             }
             rofa.save(failOnError: true)
 
             def rofta = new WhoOffice()
             rofta.setName("Regional Office for the Americas")
 
+            index = 0
             for (String name : america) {
                 Country country = new Country()
                 country.setName(name)
+                country.setLat(america_lat[index])
+                country.setLng(america_lng[index])
                 country.save()
 
                 rofta.addToCountries(country)
+                index++
             }
             rofta.save(failOnError: true)
 
             def rofsea = new WhoOffice()
             rofsea.setName("Regional Office for South-East Asia")
 
+            index = 0
             for (String name : sea) {
                 Country country = new Country()
                 country.setName(name)
+                country.setLat(sea_lat[index])
+                country.setLng(sea_lng[index])
                 country.save()
 
                 rofsea.addToCountries(country)
+                index++
             }
             rofsea.save(failOnError: true)
 
             def rofe = new WhoOffice()
             rofe.setName("Regional Office for Europe")
 
+            index = 0
             for (String name : europe) {
                 Country country = new Country()
                 country.setName(name)
+                country.setLat(europe_lat[index])
+                country.setLng(europe_lng[index])
                 country.save()
 
                 rofe.addToCountries(country)
+                index++
             }
             rofe.save(failOnError: true)
 
             def rofem = new WhoOffice()
             rofem.setName("Regional Office for Eastern Meditarranean")
 
+            index = 0
             for (String name : medit) {
                 Country country = new Country()
                 country.setName(name)
+                country.setLat(medit_lat[index])
+                country.setLng(medit_lng[index])
                 country.save()
 
                 rofem.addToCountries(country)
+                index++
             }
             rofem.save(failOnError: true)
 
             def roftwp = new WhoOffice()
             roftwp.setName("Regional Office for the Western Pacific")
 
+            index = 0
             for (String name : pacific) {
                 Country country = new Country()
                 country.setName(name)
+                country.setLat(pacific_lat[index])
+                country.setLng(pacific_lng[index])
                 country.save()
 
                 roftwp.addToCountries(country)
+                index++
             }
 
             roftwp.save(failOnError: true)
         }
 
         if (!EndUser.count()) {
+
+            // Bots
+            def GuestBot = new EndUser(
+                    version: 0,
+                    email: 'GuestMod@empact.org',
+                    firstName: 'Guest',
+                    lastName: 'Bot',
+                    password: 'password',
+                    userName: 'GuestBot'
+            )
+            GuestBot.setUserType(UserType.findByName('Bot'))
+            GuestBot.setCountry(Country.get(50))
+            GuestBot.save(failOnError: true)
+
+            def ForumBot = new EndUser(
+                    version: 0,
+                    email: 'ForumBot@empact.org',
+                    firstName: 'Forum',
+                    lastName: 'Bot',
+                    password: 'password',
+                    userName: 'forum'
+            )
+            ForumBot.setUserType(UserType.findByName('Bot'))
+            ForumBot.setCountry(Country.get(50))
+            ForumBot.save(failOnError: true)
 
             //Student Analyst
             def sngobese = new EndUser(
@@ -308,7 +380,11 @@ class BootStrap {
                     password: 'password',
                     securityAnswer: 'asasdfasdf',
                     securityQuestion: 'seasdzsdvf',
-                    userName: 'sngobese'
+                    userName: 'sngobese',
+                    verified: false,
+                    mentorName: 'Issa Ali',
+                    mentorEmail: 'iali1@macalester.edu',
+                    mentorInstitution: 'Macalester College'
             )
             sngobese.setUserType(UserType.findByName('Student Analyst'))
             sngobese.setCountry(Country.get(168))
@@ -329,7 +405,8 @@ class BootStrap {
                     password: 'password',
                     securityAnswer: 'asasdfasdf',
                     securityQuestion: 'seasdzsdvf',
-                    userName: 'iali1'
+                    userName: 'iali1',
+                    verified: false
             )
             iali1.setUserType(UserType.findByName('Mentor'))
             iali1.setCountry(Country.get(78))
@@ -344,6 +421,7 @@ class BootStrap {
                     institution: 'Macalester College',
                     lastName: 'Giesel',
                     password: 'password',
+                    verified: false,
                     securityAnswer: 'asasdfasdf',
                     securityQuestion: 'seasdzsdvf',
                     userName: 'mgiesel'
@@ -361,6 +439,7 @@ class BootStrap {
                     institution: 'Macalester College',
                     lastName: 'Wang',
                     password: 'password',
+                    verified: true,
                     securityAnswer: 'asasdfasdf',
                     securityQuestion: 'seasdzsdvf',
                     userName: 'zwang'
@@ -378,6 +457,7 @@ class BootStrap {
                     institution: 'Macalester College',
                     lastName: 'Naden',
                     password: 'password',
+                    verified: true,
                     securityAnswer: 'asasdfasdf',
                     securityQuestion: 'seasdzsdvf',
                     userName: 'snaden'
@@ -395,6 +475,7 @@ class BootStrap {
                     institution: 'Macalester College',
                     lastName: 'Nichols',
                     password: 'password',
+                    verified: true,
                     securityAnswer: 'asasdfasdf',
                     securityQuestion: 'seasdzsdvf',
                     userName: 'anichols1'
@@ -413,6 +494,7 @@ class BootStrap {
                     institution: 'Macalester College',
                     lastName: 'Hillmann',
                     password: 'password',
+                    verified: true,
                     securityAnswer: 'asasdfasdf',
                     securityQuestion: 'seasdzsdvf',
                     userName: 'bhillman'
@@ -431,6 +513,7 @@ class BootStrap {
                     institution: 'Macalester College',
                     lastName: 'Marincic',
                     password: 'password',
+                    verified: true,
                     securityAnswer: 'asasdfasdf',
                     securityQuestion: 'seasdzsdvf',
                     userName: 'imarinci'
@@ -449,6 +532,7 @@ class BootStrap {
                     institution: 'Macalester College',
                     lastName: 'Rice',
                     password: 'password',
+                    verified: true,
                     securityAnswer: 'asasdfasdf',
                     securityQuestion: 'seasdzsdvf',
                     userName: 'price'
@@ -456,16 +540,6 @@ class BootStrap {
             price.setUserType(UserType.findByName('Moderator'))
             price.setCountry(Country.get(2))
             price.save(failOnError: true)
-        }
-
-        if (!ConceptNote.count()) {
-            new ConceptNote(
-                    version: 0,
-                    title: 'Concept Note One',
-                    applications: 'Saving the world.',
-                    abstractDescription: 'All of the world.',
-                    dataSources: 'Wikipedia'
-            ).save(failOnError: true)
         }
 
 
