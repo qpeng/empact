@@ -3,22 +3,16 @@ package empact
 class ConceptNote {
 
     String title
-    String applications
-    String abstractDescription
-    String dataSources
+    String details
 
 
     static constraints = {
         title(blank:false)
-        applications(blank:false, maxSize:5000)
-        abstractDescription(blank:false, maxSize:5000)
-        dataSources(blank:false, maxSize:5000)
+        details(blank:false, maxSize:5000)
     }
 
     String toString() {
         title
-        applications
-        abstractDescription
-        dataSources
+        details
     }
 }
